@@ -1,14 +1,20 @@
-import React from "react";
-import FontIcon from "react-md/lib/FontIcons";
-import Link from "gatsby-link";
+import React from 'react';
+import FontIcon from 'react-md/lib/FontIcons';
+import Link from 'gatsby-link';
 
 function GetNavList(config) {
   const NavList = [
     {
-      primaryText: "Home",
+      primaryText: 'Home',
       leftIcon: <FontIcon>home</FontIcon>,
       component: Link,
-      to: "/"
+      to: '/'
+    },
+    {
+      primaryText: 'Events',
+      leftIcon: <FontIcon>calendar_today</FontIcon>,
+      component: Link,
+      to: '/events'
     },
     {
       divider: true
@@ -20,7 +26,7 @@ function GetNavList(config) {
       NavList.push({
         primaryText: link.label,
         leftIcon: <FontIcon forceSize iconClassName={link.iconClassName} />,
-        component: "a",
+        component: 'a',
         href: link.url
       });
     });
@@ -29,10 +35,10 @@ function GetNavList(config) {
   NavList.push({ divider: true });
 
   NavList.push({
-    primaryText: "About",
+    primaryText: 'About',
     leftIcon: <FontIcon>person</FontIcon>,
     component: Link,
-    to: "/about/"
+    to: '/about/'
   });
   return NavList;
 }
