@@ -21,7 +21,7 @@ const Events = ({ events }) => (
               </p>
               <p>
                 <FontIcon>calendar_today</FontIcon>
-                {moment(event.time).format('MMM Do YY')}
+                {moment(event.time).format('MMMM Do YYYY')}
               </p>
               <p>
                 <FontIcon>people</FontIcon>
