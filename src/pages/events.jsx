@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import fetchJsonp from 'fetch-jsonp';
+
 import Events from '../components/Events/Events';
 import config from '../../data/SiteConfig';
 
